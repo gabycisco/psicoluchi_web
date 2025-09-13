@@ -1,0 +1,39 @@
+:root {
+  /* Paleta principal - personaliza aquí tus colores */
+  --color-primario: #4A90E2;
+  --color-primario-hover: #357ABD;
+  --color-secundario: #E26A4A;
+  --color-fondo: #E2F0FF;
+  --color-fondo-alt: #FFF8E2;
+  --color-texto: #222;
+  --color-footer: #f8f9fa;
+}
+
+body {
+  scroll-behavior: smooth;
+  color: var(--color-texto);
+}
+
+.navbar-brand {
+  color: var(--color-primario) !important;
+}
+.nav-link.active, .nav-link:focus {
+  color: var(--color-secundario) !important;
+}
+section {
+  padding: 60px 0;
+}
+#hero {
+  background: linear-gradient(135deg, var(--color-fondo) 0%, var(--color-fondo-alt) 100%);
+}
+.btn-primary {
+  background-color: var(--color-primario);
+  border-color: var(--color-primario);
+}
+.btn-primary:hover {
+  background-color: var(--color-primario-hover);
+  border-color: var(--color-primario-hover);
+}
+footer {
+  background: var(--color-footer);
+}
