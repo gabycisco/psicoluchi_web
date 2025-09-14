@@ -12,22 +12,30 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
   <!-- Navbar -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#hero">Psicoluchi</a>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand custom-navbar-brand" href="#hero">
+        <span class="brand-main">LAURA PIPOLA</span><br>
+        <span class="brand-sub">lic. en psicología</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
+      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+        <ul class="navbar-nav mx-auto custom-navbar-menu">
           <li class="nav-item"><a class="nav-link" href="#about">SOBRE MÍ</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">SERVICIOS</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="#testimonials">TESTIMONIOS</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#services">TERAPIA COGNITIVA CONDUCTUAL</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tratamientos">TRATAMIENTOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">TESTIMONIOS</a></li>
           <li class="nav-item">
-            <a class="nav-link btn btn-primary px-3 ms-2 text-white rounded-0" href="#contact" style="font-weight: 600;">
-              CONTACTO
-            </a>
+            <a class="nav-link btn custom-navbar-btn" href="#contact">CONTACTO</a>
+          </li>
         </ul>
+        <div class="custom-navbar-social ms-lg-3">
+          <a href="https://wa.me/549XXXXXXXXXX" target="_blank" class="custom-navbar-icon" aria-label="WhatsApp"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="22" height="22" alt="WhatsApp"></a>
+          <a href="https://instagram.com/" target="_blank" class="custom-navbar-icon" aria-label="Instagram"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="22" height="22" alt="Instagram"></a>
+        </div>
+      </div>
       </div>
     </div>
   </nav>
@@ -35,72 +43,117 @@
   <main class="mt-5 pt-5">
 
     <!-- Hero -->
-    <section id="hero" class="py-5">
-      <div class="container text-center">
-        <div class="mb-4">
-          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
-               alt="Bienestar emocional" class="img-fluid rounded shadow" style="max-height: 320px;">
+    <section id="hero" class="hero-split">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 hero-text-col">
+            <h1 class="hero-title">Lic. en Psicología</h1>
+            <h2 class="hero-subtitle">TERAPEUTA COGNITIVA CONDUCTUAL</h2>
+            <div class="hero-desc mb-4">
+              Estás buscando mejorar tu bienestar emocional o necesitas ayuda profesional para enfrentar problemas como <b>la ansiedad, depresión, ataques de pánico</b> u otros trastornos, no dudes en contactarme.
+            </div>
+            <a href="#contact" class="btn hero-btn">SOLICITAR CITA</a>
+          </div>
+          <div class="col-lg-6 hero-img-col" style="background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=800&h=800&facepad=3&q=80');">
+            <!-- Imagen decorativa -->
+          </div>
         </div>
-        <h1 class="display-4 fw-bold">Psicoluchi</h1>
-        <p class="lead">Lic. Lucía Adelardi – Psicóloga Especialista en DBT</p>
-        <p>Bienestar emocional, autoconocimiento y herramientas para tu vida. Consultas online y presenciales.</p>
-        <a href="#contact" class="btn btn-primary btn-lg mt-3">Solicitar consulta</a>
       </div>
     </section>
 
     <!-- Sobre mí -->
-    <section id="about" class="py-5 bg-light">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-5 text-center mb-4 mb-md-0">
-            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=400&h=400&facepad=3&q=80"
-                 alt="Psicóloga" class="img-fluid rounded-circle shadow" width="260" height="260" loading="lazy">
+    <section id="about" class="about-split">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 about-img-col" style="background-image: url('https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=900&q=80');">
+            <!-- Imagen decorativa -->
           </div>
-          <div class="col-md-7">
-            <h2>Sobre mí</h2>
-            <p>Soy la Lic. Lucía Adelardi, psicóloga especializada en Terapia Dialéctico Conductual (DBT). Acompaño a personas que buscan mejorar su bienestar emocional, gestionar sus emociones y construir una vida con sentido.</p>
-            <ul>
-              <li>Matrícula Nacional: <span itemprop="license">xxxxxx</span></li>
-              <li>Especialista en DBT y terapias contextuales</li>
-              <li>Atención online y presencial en Argentina</li>
-            </ul>
-            <p>Mi enfoque es cálido, profesional y basado en la ciencia. Te ayudo a construir herramientas para afrontar desafíos de la vida.</p>
+          <div class="col-lg-6 about-text-col">
+            <h2 class="about-title">Sobre mí</h2>
+            <h3 class="about-name">LAURA PÍPOLA</h3>
+            <div class="about-desc mb-4">
+              Nacida en Bahía Blanca, me formé como <b>Licenciada En Psicología</b> en la ciudad de La Plata con estudios de postgrado y carrera de especialización en <b>Terapia Cognitiva</b> en Capital Federal.He trabajado como psicóloga en el <b>Hospital Español de La Plata</b>, cómo docente de postgrado en la <b>UNLP</b> y como docente universitaria en la <b>UCALP</b>. Actualmente atiendo en mi consultorio privado en la ciudad de La Plata.
+            </div>
+            <a href="#contact" class="btn about-btn">SOLICITAR CITA</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Servicios -->
-    <section id="services" class="py-5">
-      <div class="container">
-        <h2 class="mb-4 text-center">Servicios</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 shadow-sm text-center">
-              <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9d1-200d-2695-fe0f.svg"
-                   alt="Terapia DBT icono" width="64" height="64" class="mx-auto mt-3" />
-              <div class="card-body">
-                <h3 class="card-title">Terapia DBT</h3>
-                <p class="card-text">Intervenciones basadas en la Terapia Dialéctico Conductual para el manejo de emociones intensas, mindfulness, tolerancia al malestar y habilidades sociales.</p>
+    <section id="services" class="services-split">
+      <div class="container-fluid">
+        <h2 class="services-title">Servicios <span style="font-size:1.1rem;font-family:serif;font-weight:400;opacity:.5;vertical-align:top;">3</span></h2>
+        <div class="services-row">
+          <div class="services-card-col">
+            <div class="services-card">
+              <div class="services-card-inner">
+                <div class="services-card-front">
+                  <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=600&h=400&facepad=3&q=80" alt="Terapia DBT" class="services-img" />
+                  <div class="services-card-content">
+                    <div class="services-card-title">Terapia DBT</div>
+                    <button class="services-card-arrow" aria-label="Ver más sobre Terapia DBT" data-service="dbt">
+                      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="services-card-back">
+                  <div class="services-card-title" style="color:#49515a; margin-bottom:0.7rem;">Terapia DBT</div>
+                  <div class="services-card-back-text">
+                    Intervenciones basadas en la Terapia Dialéctico Conductual para el manejo de emociones intensas, mindfulness, tolerancia al malestar y habilidades sociales.
+                  </div>
+                  <button class="services-card-back-close" aria-label="Cerrar">&times;</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 shadow-sm text-center">
-              <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-                   alt="Consultas individuales icono" width="64" height="64" class="mx-auto mt-3" />
-              <div class="card-body">
-                <h3 class="card-title">Consultas individuales</h3>
-                <p class="card-text">Trabajo personalizado adaptado a tus objetivos. Espacio de escucha activa y acompañamiento profesional.</p>
+          <div class="services-card-col">
+            <div class="services-card">
+              <div class="services-card-inner">
+                <div class="services-card-front">
+                  <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=80" alt="Consultas individuales" class="services-img" />
+                  <div class="services-card-content">
+                    <div class="services-card-title">Consultas individuales</div>
+                    <button class="services-card-arrow" aria-label="Ver más sobre Consultas individuales" data-service="consultas">
+                      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="services-card-back">
+                  <div class="services-card-title" style="color:#49515a; margin-bottom:0.7rem;">Consultas individuales</div>
+                  <div class="services-card-back-text">
+                    Trabajo personalizado adaptado a tus objetivos. Espacio de escucha activa y acompañamiento profesional.
+                  </div>
+                  <button class="services-card-back-close" aria-label="Cerrar">&times;</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card h-100 shadow-sm text-center">
-              <img src="https://cdn-icons-png.flaticon.com/512/2593/2593402.png"
-                   alt="Talleres y grupos icono" width="64" height="64" class="mx-auto mt-3" />
-              <div class="card-body">
-                <h3 class="card-title">Talleres y grupos</h3>
+          <div class="services-card-col">
+            <div class="services-card">
+              <div class="services-card-inner">
+                <div class="services-card-front">
+                  <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Talleres y grupos" class="services-img" />
+                  <div class="services-card-content">
+                    <div class="services-card-title">Talleres y grupos</div>
+                    <button class="services-card-arrow" aria-label="Ver más sobre Talleres y grupos" data-service="talleres">
+                      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="services-card-back">
+                  <div class="services-card-title" style="color:#49515a; margin-bottom:0.7rem;">Talleres y grupos</div>
+                  <div class="services-card-back-text">
+                    Espacios grupales para el desarrollo de habilidades DBT, autoconocimiento y manejo emocional. Modalidad online y presencial.
+                  </div>
+                  <button class="services-card-back-close" aria-label="Cerrar">&times;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
                 <p class="card-text">Espacios grupales para el desarrollo de habilidades DBT, autoconocimiento y manejo emocional. Modalidad online y presencial.</p>
               </div>
             </div>
@@ -136,35 +189,29 @@
     </section> -->
 
     <!-- Contacto -->
-    <section id="contact" class="py-5">
-      <div class="container">
-        <h2 class="mb-4 text-center">Contacto</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="message" rows="4" placeholder="¿En qué puedo ayudarte?" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-            <div class="mt-4 text-center">
-              <p>También puedes contactarme por WhatsApp:</p>
-              <a href="https://wa.me/549XXXXXXXXXX" class="btn btn-success" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="24" height="24" alt="WhatsApp" style="margin-right: 8px;">
-                Enviar WhatsApp
-              </a>
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 contact-form-col">
+            <h2 class="contact-title">Contactame</h2>
+            <div class="contact-desc mb-4">
+              Si estás buscando mejorar tu bienestar emocional o necesitas ayuda profesional no dudes en contactarme. ¡Estoy aquí para ayudarte!
             </div>
+            <form>
+              <input type="text" class="form-control" placeholder="Nombre y Apellido" required>
+              <input type="email" class="form-control" placeholder="Email" required>
+              <input type="text" class="form-control" placeholder="Whatsapp (sin 0 ni 15)" required>
+              <textarea class="form-control" rows="3" placeholder="Me comunico desde el sitio web interesada/o en una cita" required></textarea>
+              <button type="submit" class="btn btn-contact">ENVIAR SOLICITUD</button>
+            </form>
+          </div>
+          <div class="col-lg-6 contact-img-col" style="background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=900&q=80');">
+            <!-- Imagen decorativa -->
           </div>
         </div>
+        <a href="https://wa.me/549XXXXXXXXXX" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </a>
       </div>
     </section>
 
