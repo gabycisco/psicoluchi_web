@@ -17,6 +17,22 @@ body {
 .navbar-brand {
   color: var(--color-primario) !important;
 }
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+  }
+
+  .navbar-collapse ul {
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .nav-link.active, .nav-link:focus {
   color: var(--color-secundario) !important;
 }
