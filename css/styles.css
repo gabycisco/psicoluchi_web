@@ -1,3 +1,140 @@
+/* --- NORMALIZACIÓN DE TÍTULOS Y FUENTES --- */
+h1, .hero-title, .about-title, .dbt-title, .contact-title {
+  font-family: 'Dancing Script', cursive, sans-serif;
+  font-size: 3.2rem;
+  color: #eac1b0;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+h2, .about-name, .dbt-subtitle, .services-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  color: #49515a;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.pt-5 {
+  padding-top: 2.5rem!important;
+}
+.about-desc, .dbt-desc, .services-card-text, .contact-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.13rem;
+  color: #49515a;
+  margin-bottom: 2.2rem;
+  text-align: center;
+  line-height: 1.6;
+  _max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-btn, .btn-contact, .hero-btn {
+  font-family: 'Montserrat', sans-serif;
+  background: #eac1b0;
+  color: #49515a;
+  border: none;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.9rem 0;
+  width: 240px;
+  margin-top: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+.about-btn:hover, .btn-contact:hover, .hero-btn:hover {
+  background: #fff;
+  color: #e26a4a;
+}
+/* --- DBT SPLIT ESTILO MODERNO --- */
+#dbt_info.dbt-split {
+  background: #f8f5ee;
+  color: #222;
+  padding: 0;
+}
+#dbt_info .container-fluid {
+  max-width: 100vw;
+  padding: 0;
+}
+#dbt_info .row {
+  min-height: 70vh;
+  display: flex;
+  align-items: stretch;
+}
+#dbt_info .dbt-img-col {
+  background-size: cover;
+  background-position: center;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+#dbt_info .dbt-text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 32px;
+  background: none;
+}
+#dbt_info .dbt-title {
+  font-family: 'Dancing Script', cursive, sans-serif;
+  font-size: 3.2rem;
+  color: #4a3b2c;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+#dbt_info .dbt-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  color: #222;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+#dbt_info .dbt-desc {
+  font-size: 1.13rem;
+  color: #222;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+}
+@media (max-width: 991.98px) {
+  #dbt_info .row {
+    flex-direction: column;
+  }
+  #dbt_info .dbt-img-col {
+    min-height: 180px;
+    height: 180px;
+    order: 1;
+  }
+  #dbt_info .dbt-text-col {
+    padding: 32px 12px 32px 12px;
+    order: 2;
+  }
+  #dbt_info .dbt-title {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+  #dbt_info .dbt-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  #dbt_info .dbt-desc {
+    font-size: 0.98rem;
+    padding: 0 0.5rem;
+    max-width: 98vw;
+  }
+}
 #services .services-card {
   perspective: 1200px;
   position: relative;
@@ -323,7 +460,7 @@
 .custom-navbar-brand .brand-sub {
   font-family: 'Dancing Script', cursive, sans-serif;
   font-size: 1.6rem;
-  color: #eac1b0;
+  color: #f7adb6;
   font-weight: 400;
   margin-top: -0.2rem;
   margin-left: 2px;
@@ -446,68 +583,21 @@
   justify-content: center;
   padding: 56px 40px 56px 40px;
 }
-#about .about-title {
-  font-family: 'Dancing Script', cursive, sans-serif;
-  font-size: 3.2rem;
-  color: #eac1b0;
-  margin-bottom: 0.7rem;
-  text-align: left;
-}
-#about .about-name {
-  font-family: 'Montserrat', serif;
-  font-size: 2.5rem;
-  color: #49515a;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  text-align: left;
-  letter-spacing: 1px;
-}
-#about .about-desc {
-  font-size: 1.15rem;
-  margin-bottom: 2.2rem;
-  color: #49515a;
-  text-align: left;
-}
-#about .about-btn {
-  background: #eac1b0;
-  color: #49515a;
-  border: none;
-  border-radius: 0;
-  font-weight: 700;
-  font-size: 1.1rem;
-  padding: 0.9rem 0;
-  width: 240px;
-  margin-top: 0.5rem;
-  transition: background 0.2s, color 0.2s;
-  text-align: center;
-  display: inline-block;
-}
-#about .about-btn:hover {
-  background: #fff;
-  color: #e26a4a;
-}
 @media (max-width: 991.98px) {
-  #about .row {
-    flex-direction: column;
-  }
-  #about .about-img-col {
-    display: none !important;
-  }
-  #about .about-text-col {
-    padding: 32px 12px 32px 12px;
-  }
-  #about .about-title {
+  h1, .hero-title, .about-title, .dbt-title, .contact-title {
     font-size: 2.2rem;
     text-align: center;
   }
-  #about .about-name {
+  h2, .about-name, .dbt-subtitle, .services-title {
     font-size: 1.3rem;
     text-align: center;
   }
-  #about .about-desc {
-    text-align: center;
+  .about-desc, .dbt-desc, .services-card-text, .contact-desc {
+    font-size: 0.98rem;
+    padding: 0 0.5rem;
+    max-width: 98vw;
   }
-  #about .about-btn {
+  .about-btn, .btn-contact, .hero-btn {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -531,51 +621,68 @@
   align-items: stretch;
 }
 #hero .hero-text-col {
-  background: #49515a;
+  background: rgba(30, 30, 30, 0.60);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 56px 40px 56px 40px;
+  text-align: center;
 }
 #hero .hero-title {
-  font-family: 'Dancing Script', cursive, sans-serif;
-  font-size: 4rem;
-  color: #eac1b0;
-  margin-bottom: 0.7rem;
-  text-align: left;
-}
-#hero .hero-subtitle {
-  font-family: 'Montserrat', serif;
-  font-size: 2.5rem;
-  color: #eac1b0;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  text-align: left;
-  letter-spacing: 1px;
-}
-#hero .hero-desc {
-  font-size: 1.15rem;
-  margin-bottom: 2.2rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 4.2rem;
   color: #fff;
-  text-align: left;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.25);
+}
+#hero .hero-specialty {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+#hero .hero-desc-box {
+  background: rgba(0,0,0,0.38);
+  color: #fff;
+  font-size: 1.02rem;
+  border-radius: 10px;
+  padding: 1.1rem 1.5rem 1.1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  text-align: center;
+  line-height: 1.5;
 }
 #hero .hero-btn {
-  background: #eac1b0;
-  color: #49515a;
-  border: none;
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid #fff;
   border-radius: 0;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.1rem;
   padding: 0.9rem 0;
-  width: 240px;
+  width: 260px;
   margin-top: 0.5rem;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s, border 0.2s;
   text-align: center;
   display: inline-block;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 #hero .hero-btn:hover {
   background: #fff;
-  color: #e26a4a;
+  color: #222;
+  border: 1.5px solid #fff;
 }
 #hero .hero-img-col {
   background: #fff;
@@ -595,18 +702,20 @@
     display: none !important;
   }
   #hero .hero-text-col {
-    padding: 32px 12px 32px 12px;
+    padding: 32px 8px 32px 8px;
   }
   #hero .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: center;
   }
-  #hero .hero-subtitle {
-    font-size: 1.3rem;
+  #hero .hero-specialty {
+    font-size: 0.98rem;
     text-align: center;
   }
-  #hero .hero-desc {
-    text-align: center;
+  #hero .hero-desc-box {
+    font-size: 0.98rem;
+    padding: 0.9rem 0.7rem 0.9rem 0.7rem;
+    max-width: 98vw;
   }
   #hero .hero-btn {
     width: 100%;
@@ -655,16 +764,17 @@
 }
 #contact .contact-title {
   font-family: 'Dancing Script', cursive, sans-serif;
-  font-size: 4rem;
+  font-size: 3.2rem;
   color: #eac1b0;
   margin-bottom: 1.5rem;
-  text-align: left;
+  text-align: center;
 }
+
 #contact .contact-desc {
   font-size: 1.15rem;
   margin-bottom: 2.2rem;
   color: #fff;
-  text-align: left;
+  _text-align: left;
 }
 #contact .form-control {
   background: #fff;
