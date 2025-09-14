@@ -172,26 +172,37 @@
 }
 @media (max-width: 991.98px) {
   #services .services-row {
-    gap: 1.1rem;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
   }
   #services .services-card-col {
-    min-width: 220px;
-    max-width: 220px;
+    min-width: 0;
+    max-width: 100vw;
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 0 auto;
   }
   #services .services-card {
-    min-height: 220px;
+    min-height: 260px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #services .services-img {
+    height: 180px;
+    border-radius: 18px 18px 0 0;
   }
   #services .services-card-content {
     padding: 1.1rem 0.7rem 0.7rem 0.7rem;
   }
   #services .services-card-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   #services .services-card-arrow {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
@@ -224,11 +235,12 @@
   justify-content: center;
 }
 #services .services-card {
-  background: #fff;
-  border-radius: 0;
-  box-shadow: 0 2px 12px rgba(73,81,90,0.07);
-  border: 6px solid #fff;
-  padding: 0 0 32px 0;
+  _background: #fff;
+  background-color: #eac1b0;
+  border-radius: 18px;
+  _box-shadow: 0 2px 12px rgba(73,81,90,0.07);
+  _border: 6px solid #fff;
+  padding: 10px;
   max-width: 480px;
   width: 100%;
   margin: 0 auto;
@@ -247,7 +259,8 @@
 #services .services-card-title {
   font-family: 'Montserrat', serif;
   font-size: 2rem;
-  color: #49515a;
+  _color: #49515a;
+  color: white;
   font-weight: 500;
   margin-bottom: 1.2rem;
   text-align: center;
